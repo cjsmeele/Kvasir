@@ -577,6 +577,10 @@ namespace Kvasir {
     }
     namespace Lpuart0Data{    ///<LPUART Data Register
         using Addr = Register::Address<0x4005400c,0xffff0400,0x00000000,unsigned>;
+
+        ///no description available
+        constexpr Register::FieldLocation<Addr,Register::maskFromRange(7,0),Register::ReadWriteAccess,unsigned> rt{};
+
         ///no description available
         constexpr Register::FieldLocation<Addr,Register::maskFromRange(0,0),Register::ReadWriteAccess,unsigned> r0t0{}; 
         ///no description available
